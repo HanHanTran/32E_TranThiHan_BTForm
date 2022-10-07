@@ -37,7 +37,7 @@ export const baitapForm = (state= stateDefault ,{type,payload}) =>{
             // const newUserList = state.danhSachSinhVien.map(item => item.id === payload.id ? payload:item)
 
         }
-        case 'SREACH_USER':{
+        case 'SEARCH_USER':{
             const data =state.danhSachSinhVien.filter(item=>item.maSV === payload)
             return {...state,danhSachSinhVien:data}
             

@@ -8,7 +8,7 @@ import { connect } from 'react-redux'
             userName: '',
             phoneNumber: '',
             email: '',
-            sreach:'',
+            search:'',
            
         },
         errors:{},
@@ -84,7 +84,7 @@ import { connect } from 'react-redux'
 
       handleSreach = (event)=>{
         this.props.dispatch({
-              type: 'SREACH_USER',
+              type: 'SEARCH_USER',
               payload: this.state.values.sreach
             })
            
@@ -197,7 +197,7 @@ import { connect } from 'react-redux'
                         name='sreach'
                       className='form-control w-50 d-inline '
                       onChange={this.handleState}
-                      placeholder = 'sreach'
+                      placeholder = 'search'
                       
                   />
                   <button  className='btn btn-success mx-3 ' onClick={this.handleSreach}>Tìm kiếm</button>
